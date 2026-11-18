@@ -1,9 +1,5 @@
 
-const dns = require("dns");
 const mongoose = require("mongoose");
-
-// Temporary DNS workaround for local Windows development
-dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 const connectDB = async () => {
     try {
